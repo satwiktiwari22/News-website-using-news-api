@@ -32,9 +32,7 @@ function App() {
       })
       .then((json) => {
         console.log(json.articles);
-        setTimeout(() => {
-          setLoading(false);
-        }, 2000);
+        setLoading(false);
         setData(json);
       });
   };
